@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coversor de medidas</title>
+</head>
+<body>
+    <h1>conversor de medidas</h1>
+    <input type="button" value="converte" onclick="converte()">
+    <div id="res">
+        Clique no botão acima para iniciar
+    </div>
+
+    <script>
+        function converte() {
+            var m = Number(window.prompt ('digite uma distância em metros (m)'))
+            var dan = m / 10
+            var hm = dan / 10
+            var km = hm / 10
+
+            var dm = m * 10
+            var cm = dm * 10
+            var mm = cm * 10
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<h1>A distância de ${m} mentros, corresponde a...</h1>`
+            res.innerHTML += `<p>${km} quilômetros (Km)</p>`
+            res.innerHTML += `<p>${hm} hectômetros (Hm)</p>`
+            res.innerHTML += `<p>${dan} decâmetros (dan)</p>`
+
+            res.innerHTML += `<p>${dm} decímetros (dm)</p>`
+            res.innerHTML += `<p>${cm} centímetros (cm)</p>`
+            res.innerHTML += `<p>${mm} milimetros (mm)</p>`
+        }
+    </script>
+</body>
+</html>

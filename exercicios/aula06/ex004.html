@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('qual é seu nome?')
+        document.write(`Ola, ${nome} seu nome tem <strong>${nome.length}</strong> letras. <br>`)
+        //var.length: para dize quantas letras tem
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`) 
+        //var.toUpperCase() para deixa as letras em maiúsculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+        //var.toLowerCase() para deixa as letras em minisculas
+        /*
+            document.write: para mostra na tela
+            Voce tambem pode coloca tegs de HTML
+        */
+    </script>
+</body>
+</html>

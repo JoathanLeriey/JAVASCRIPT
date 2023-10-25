@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(101, 101, 253);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] 
+        /*
+            getElementsByTagName()
+            basicamente ele seleciona varias tag da msm tag e esse cochete([]) é para seleciana qual paragrafo é dos dois, e ele começa do 0
+        */
+        window.document.writeln(p1.innerText) // innerText é para pega o que ta esscrito
+        window.document.writeln( p1.innerHTML) // innerHTML ele pega a te o estilo que esta
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'estou aguardado'
+        */
+        var d = window.document.querySelector('div#msg')//usa o sistema se seleção do CSS
+        d.style.background = 'blue'
+        d.innerHTML = 'Ola!'
+    </script>
+</body>
+</html>

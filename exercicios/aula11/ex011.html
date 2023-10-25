@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sem titulo</title>
+    <style>
+        body {
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou </h1>
+
+    <label for="pais">Qual é seu <strong>Pais</strong>:</label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Consultar" onclick="cons()">
+    <div id="res"></div>
+
+    <script>
+        function cons(){
+            var p = document.querySelector('#pais')
+            var res = document.querySelector('div#res')
+            var pais = String(p.value)
+            
+            res.innerHTML = `<br>Seu pais é <strong>${pais}</strong>`
+            
+            if (pais == 'Brasil' || 'brasil') {
+                res.innerHTML += "<br><strong>Brasileiro</strong>"
+            } else {
+                res.innerHTML += "<br><strong>Estrangeiro</strong>"
+            }
+        }
+    </script>
+</body>
+</html>

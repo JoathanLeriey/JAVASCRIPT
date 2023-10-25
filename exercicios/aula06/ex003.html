@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(58, 58, 224);
+            color: yellow;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, Mundo!</h1>
+    <p>Ja mim livrei da maldição!!</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um numero:')) 
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ingual a ${s}`)
+        /*
+        window.alert('A soma dos valores é ' + s)
+        O prompt ele deixa o que escre nele em string ai precisa comverte para number
+        No parseInt a pessoa pode tira o number qque fica atras dele 
+        Se coloca sor o Number(n) ele vai se vira para sabe se é inteiro ou real
+        Para converte de number para string vc pode coloca so String(n) ou n.toString()
+        --------------------------------------------------------------------------------
+        (number + number) para adição
+        (string + string) para concatenação
+        */
+    </script>
+</body>
+</html>
