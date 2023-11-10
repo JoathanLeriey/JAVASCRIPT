@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -12,25 +12,15 @@
     </header>
 
     <section>
-        <div id="formulario">
-            <p>
-                <label for="inicio">Inicio:</label>
-                <input type="number" name="inicio" id="inicio">
-            </p>
+        <div id="dados">
+            <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passa: <input type="number" name="passa" id="txtp"></p>
 
-            <p>
-                <label for="fim">Fim:</label>
-                <input type="number" name="fim" id="fim">
-            </p>
-
-            <p>
-                <label for="passa">Passa:</label>
-                <input type="number" name="passa" id="passa">
-            </p>
-            <input type="button" value="Contar" onclick="contar()">
+            <p><input type="button" value="Contar" onclick="contar()"></p>
         </div>
         <div id="res">
-            
+            Preparando a contagem...
         </div>
     </section>
 
