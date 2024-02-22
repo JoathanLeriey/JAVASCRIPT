@@ -14,10 +14,10 @@ function gera(){
             var item = document.createElement('option') 
 
             item.text = `${n1} x ${con} = ${n1 * con}`
-            item.value = `tab${con}` //para da a cada item um value
+            item.value = `tab${con}` //para da a cada item um value 
 
             tab.appendChild(item)
-        
+
             con++
         }
         
