@@ -1,29 +1,28 @@
-let num = document.querySelector('input#fnum') //para puxa os dados
-let lista = document.querySelector('select#flista') //
-let res = document.querySelector('div#res') //
-let valores = [] //para coloca todos os valores que for adicionado
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('Select#flista')
+let res = document.querySelector('div#res')
+let valores = []
 
-function isNumero(n) { // esse é para verifica se vc colocou um nemero ou n 
-    if(Number(n) >= 1 && Number(n) <= 200) { 
-        return true 
-    }else {
-        return false
-    }
-    
-}
-
-function inLista(n, l) { // para sabe se o numero adicionado ja esta na lista ou n
-    if(l.indexOf(Number(n)) != -1) {
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
         return true
-    }else {
+    } else {
         return false
     }
 }
 
-function adicionar() {
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar(){ //para checa ser é um numero e se ele ta ja na lista 
     if(isNumero(num.value) && !inLista(num.value, valores)) {
-        
-    }else {
-        window.alert('Valor invalido ou ja encontrado na lista.')
+        window.alert('tudo certo')
+    } else {
+        window.alert('valor invalidor ou na lista.')
     }
 }
